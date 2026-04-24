@@ -46,8 +46,6 @@ O dataset foi gerado pelo **Claude (IA da Anthropic)** com o objectivo de simula
 
 - Os dados foram tratados e modelados no **Power Query** do Excel.
 - O dataset original (`banco_filas.csv`) foi importado como tabela base e carregado directamente na folha `banco_filas`, servindo como única fonte de dados para todas as análises.
-- O horário de funcionamento bancário considerado foi das **08h00 às 15h30**, apenas em **dias úteis** (Segunda a Sexta-feira).
-- Registos fora deste horário e com dias não úteis foram filtrados e excluídos no Power Query.
 - Tempos de espera **negativos** ou **superiores a 300 minutos** foram tratados como nulos e excluídos dos cálculos de média.
 - O threshold de desempenho dos funcionários foi definido como **10% acima da média geral** de tempo de atendimento (26,4 × 1,1 = 29,0 minutos).
 - Uma desistência é classificada quando `status_atendimento = "Desistiu"`.
