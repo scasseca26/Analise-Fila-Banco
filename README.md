@@ -55,7 +55,7 @@ O dataset foi gerado pelo **Claude (IA da Anthropic)** com o objectivo de simula
 ## Transformações no Power Query
 
 ### 1 — Importação e Dimensão Inicial
-
+Antes de qualquer limpeza, o dataset foi explorado para compreender a sua estrutura, dimensão e qualidade. Esta fase correspondeu à primeira leitura do ficheiro no Power Query e à aplicação de filtros iniciais no Excel.
 - Importação do ficheiro `banco_filas.csv` com **20.300 registos** e **16 colunas**.
 - Verificação dos tipos de dados de cada coluna: `data_atendimento` para **Data**, `hora_chegada`, `hora_atendimento` e `hora_fim` para **Hora**, campos numéricos para **Número Inteiro**.
 
@@ -215,6 +215,23 @@ Os 50 funcionários operam maioritariamente entre 23 e 29 minutos por atendiment
 ---
 
 ## Resultados
+
+Os resultados da análise são entregues ao Director de Operações através de um **Dashboard interactivo** construído no Excel, organizado da seguinte forma:
+ 
+| Componente | Descrição | Responde a |
+|---|---|---|
+| 4 Cartões de KPI | Total de Senhas, Taxa de Desistência, Tempo Médio de Atendimento e Tempo Médio de Espera | Visão geral imediata |
+| Gráfico de Rosca | Distribuição do Status de Atendimento (Atendido, Desistiu, Reagendado) | Pergunta 1 e 4 |
+| Gráfico de Barras | Horários de Pico ao longo do dia | Pergunta 2 |
+| Gráfico de Linhas | Evolução diária dos atendimentos de Janeiro a Março | Pergunta 4 |
+| Gráfico de Barras Horizontais | Volume de Atendimento por Agência com detalhe de Atendidos, Desistências e Reagendados | Pergunta 1 |
+ 
+O Dashboard permite ao gestor filtrar a informação em tempo real através de **Segmentadores de Dados**:
+ 
+- **Mês** — Janeiro, Fevereiro, Março ou visão geral
+- **Dia da Semana** — Segunda a Sexta-feira
+- **Tipo de Serviço** — todos os 7 serviços disponíveis
+- **Agência** — todas as 10 agências de Luanda
 
 <img width="1860" height="780" alt="Sistema Fila" src="https://github.com/user-attachments/assets/03035875-c5b8-4952-afc7-e99bb4209c37" />
 
